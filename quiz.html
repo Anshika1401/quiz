@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker | Learn with Fun</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Quiz Maker</a>
+        <nav class="navbar">
+            <a href="#home" class="nav-link" data-target="home">Home</a>
+            <a href="#about" class="nav-link" data-target="about">About</a>
+            <a href="#quiz" class="nav-link" data-target="quiz">Quiz</a>
+            <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section home" id="home">
+            <h1>Welcome to Quiz Maker</h1>
+            <p>Learn through quiz</p>
+            <button class="start" type="button" data-target="quiz">Start Quiz</button>
+        </section>
+
+        <section class="section about" id="about">
+            <h1>About Quiz Maker</h1>
+            <p>Test your knowledge and challenge your friends with our engaging quizzes! Discover fun, interactive questions on a wide range of topics and see how you stack up.</p>
+        </section>
+
+        <section class="section quiz" id="quiz">
+            <h1>Quiz Time!</h1>
+            <div class="quiz-box">
+                <div class="quizheader">
+                    <span>Quiz: Web Development</span>
+                    <span class="header-score">Score: 0/5</span>
+                </div>
+                <h2 class="question-text">What does HTML stand for?</h2>
+                <div class="option-list">
+                    <div class="option">a) Hyper type makeup language</div>
+                    <div class="option">b) Hyper type multiple language</div>
+                    <div class="option">c) Hypertext Markup Language</div>
+                    <div class="option">d) Home text multi language</div>
+                </div>
+                <div class="quiz-footer">
+                    <span class="question-total">1 of 5 Questions</span>
+                    <button class="next-btn" type="button">Next</button>
+                </div>
+            </div>
+        </section>
+        <section class="section results" id="results">
+            <h1>Quiz Results</h1>
+            <p class="header-score">Your score: 0 out of 5</p>
+            <div class="feedback">
+            </div>
+            <button class="restart-btn btn" type="button" data-target="home">Restart Quiz</button>
+        </section>
+        
+
+        <section class="section contact" id="contact">
+            <h1>Contact Us</h1>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
